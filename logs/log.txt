@@ -1,0 +1,10 @@
+{"level":"fatal","timestamp":"2025-05-10T18:35:32.518+0300","caller":"httpServer/server.go:29","msg":"listen tcp: address 8080: missing port in address","pid":67509}
+{"level":"info","timestamp":"2025-05-10T18:36:32.539+0300","caller":"app/httpApp.go:63","msg":"Shutting down server...","pid":67815}
+{"level":"info","timestamp":"2025-05-10T18:36:32.539+0300","caller":"httpServer/server.go:43","msg":"Shutdown completed before timeout.","pid":67815}
+{"level":"fatal","timestamp":"2025-05-10T18:43:57.613+0300","caller":"app/grpcApp.go:24","msg":"Failed to listen:listen tcp: address 3000: missing port in address","pid":69365}
+{"level":"info","timestamp":"2025-05-10T18:47:11.960+0300","caller":"app/grpcApp.go:29","msg":"Listening gRPC server at %v[::]:3000","pid":70533}
+{"level":"info","timestamp":"2025-05-10T21:06:06.857+0300","caller":"app/httpApp.go:64","msg":"Shutting down server...","pid":91248}
+{"level":"info","timestamp":"2025-05-10T21:06:06.858+0300","caller":"httpServer/server.go:43","msg":"Shutdown completed before timeout.","pid":91248}
+{"level":"info","timestamp":"2025-05-11T21:14:43.610+0300","caller":"app/httpApp.go:64","msg":"Shutting down server...","pid":160745}
+{"level":"info","timestamp":"2025-05-11T21:14:43.611+0300","caller":"httpServer/server.go:31","msg":"API server started successfully on port 8080","pid":160745}
+{"level":"info","timestamp":"2025-05-11T21:14:43.611+0300","caller":"httpServer/server.go:43","msg":"Shutdown completed before timeout.","pid":160745}

@@ -1,0 +1,18 @@
+networks:
+  dev:
+
+
+services:
+  grpc-pubsub-server:
+    build:
+      context: .
+      dockerfile: ./build/grpcApp/Dockerfile
+    image: grpc-pubsub-server
+    container_name: grpc-pubsub-server
+    command: [ "sh", "-c", "go run /usr/src/app/cmd/grpcApp/main.go" ]
+    environment:
+      - GRPC_PORT=${GRPC_PORT}
+    ports:
+      - "${GRPC_PORT}:${GRPC_PORT}"
+    networks:
+      - dev
