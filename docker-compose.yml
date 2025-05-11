@@ -3,6 +3,25 @@ networks:
 
 
 services:
+#  api-pubsub-server:
+#    build:
+#      context: .
+#      dockerfile: ./build/httpApp/Dockerfile
+#    image: api-pubsub-server
+#    deploy:
+#      resources:
+#        limits:
+#          memory: 6G
+#          cpus: '6.0'
+#        reservations:
+#          memory: 4G
+#    container_name: api-pubsub-server
+#    command: ["sh", "-c", "go run /usr/src/app/cmd/httpApp/main.go"]
+#    ports:
+#      - "8080:8080"
+#    networks:
+#      - dev
+
   grpc-pubsub-server:
     build:
       context: .

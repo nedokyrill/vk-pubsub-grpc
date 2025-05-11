@@ -26,7 +26,7 @@ func GrpcRun() {
 
 	s := grpc.NewServer()
 	pb.RegisterPubSubServer(s, &grpcService.GrpcServer{})
-	logger.Logger.Infof("Listening gRPC server at %v", lis.Addr())
+	logger.Logger.Info("Listening gRPC server at %v", lis.Addr())
 
 	if err = s.Serve(lis); err != nil {
 		logger.Logger.Fatal("Failed to serve:", err)
